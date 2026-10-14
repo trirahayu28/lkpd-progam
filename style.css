@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+h3 {
+    color: #3988b8;
+    margin-bottom: 20px;
+}
+
+.hosting {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.paket {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #dddddd;
+    box-shadow: 0 2px 5px #dddddd;
+    box-sizing: border-box;
+}
+
+.free {
+    background-color: #2196f3;
+    color: white;
+    text-align: center;
+    padding: 8px 2px;
+}
+
+.premium {
+    background-color: #ff9800;
+    color: white;
+    text-align: center;
+    padding: 8px 2px;
+}
+
+.profesional {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 8px 2px;
+}
+
+.paket h4 {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.paket p {
+    font-size: 10px;
+    margin: 5px 0;
+}
+
+.isi {
+    padding: 7px;
+}
+
+.isi p {
+    font-size: 10px;
+    line-height: 1.5;
+    padding: 8px 0;
+    margin: 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.tombol {
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 8px 2px;
+    margin-top: 8px;
+    font-size: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.biru {
+    background-color: #2196f3;
+}
+
+.orange {
+    background-color: #ff9800;
+}
+
+.hijau {
+    background-color: green;
+}
+
+#mahasiswa {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 12px;
+}
+
+#mahasiswa th {
+    background-color: #493b91;
+    color: white;
+    padding: 10px 4px;
+}
+
+#mahasiswa td {
+    background-color: #fff0d2;
+    border: 1px solid #8ca77c;
+    padding: 10px 4px;
+}
+
+#mahasiswa tr:hover td {
+    background-color: #ffe2a8;
+}
+
+
+    .hosting {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 6px;
+    }
+
+    .paket {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .paket h4 {
+        font-size: 11px;
+    }
+
+    .paket p,
+    .isi p {
+        font-size: 9px;
+        overflow-wrap: anywhere;
+    }
+
+    .isi {
+        padding: 5px;
+    }
+
+    .tombol {
+        font-size: 9px;
+        padding: 7px 1px;
+    }
+
+    #mahasiswa {
+        font-size: 9px;
+    }
+
+    #mahasiswa th,
+    #mahasiswa td {
+        padding: 6px 2px;
+        overflow-wrap: anywhere;
+    }
+}
