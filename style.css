@@ -1,194 +1,165 @@
-
-
-
-
-/* =========================
-   1. PENGATURAN DASAR
-========================= */
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    margin: 30px;
+    margin: 20px;
     background-color: white;
-    color: #333;
 }
 
-/* =========================
-   2. JUDUL UTAMA
-========================= */
-.judul {
+h2 {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
 }
 
-/* =========================
-   3. JUDUL BAGIAN
-========================= */
 h3 {
-    margin-top: 40px;
-    margin-bottom: 25px;
-    color: steelblue;
-    font-size: 28px;
+    color: #3988b8;
+    margin-bottom: 20px;
 }
 
-/* =========================
-   4. CONTAINER PAKET HOSTING
-========================= */
-.paket-container {
+.hosting {
     display: flex;
-    align-items: stretch;
-    gap: 15px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
     width: 100%;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 
-/* =========================
-   5. KARTU PAKET HOSTING
-========================= */
 .paket {
     flex: 1;
     min-width: 0;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 6px #00000020;
-    background-color: white;
+    border: 1px solid #dddddd;
+    box-shadow: 0 2px 5px #dddddd;
+    box-sizing: border-box;
 }
 
-/* JUDUL PAKET */
+.free {
+    background-color: #2196f3;
+    color: white;
+    text-align: center;
+    padding: 8px 2px;
+}
+
+.premium {
+    background-color: #ff9800;
+    color: white;
+    text-align: center;
+    padding: 8px 2px;
+}
+
+.profesional {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 8px 2px;
+}
+
 .paket h4 {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.paket p {
+    font-size: 10px;
+    margin: 5px 0;
+}
+
+.isi {
+    padding: 7px;
+}
+
+.isi p {
+    font-size: 10px;
+    line-height: 1.5;
+    padding: 8px 0;
+    margin: 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.tombol {
+    width: 100%;
+    border: none;
     color: white;
-    text-align: center;
-    padding: 18px 5px;
-    margin: 0;
-    font-size: 16px;
+    padding: 8px 2px;
+    margin-top: 8px;
+    font-size: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
-/* HARGA PAKET */
-.paket .harga {
-    text-align: center;
-    color: white;
-    margin: 0;
-    padding: 12px 5px;
-}
-
-/* ISI PAKET */
-.paket p:not(.harga) {
-    padding: 15px 8px;
-    margin: 0;
-    border-bottom: 1px solid #eee;
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-/* WARNA PAKET FREE */
-.free h4,
-.free .harga,
-.free button {
+.biru {
     background-color: #2196f3;
 }
 
-/* WARNA PAKET PREMIUM */
-.premium h4,
-.premium .harga,
-.premium button {
+.orange {
     background-color: #ff9800;
 }
 
-/* WARNA PAKET PROFESIONAL */
-.profesional h4,
-.profesional .harga,
-.profesional button {
+.hijau {
     background-color: green;
 }
 
-/* =========================
-   6. TOMBOL PESAN
-========================= */
-.paket button {
-    display: block;
-    width: calc(100% - 20px);
-    margin: auto 10px 10px;
-    padding: 12px 5px;
-    color: white;
-    border: none;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.paket button:hover {
-    opacity: 0.85;
-}
-
-/* =========================
-   7. TABEL DATA MAHASISWA
-========================= */
-.tabel-responsive {
-    width: 100%;
-    overflow-x: auto;
-}
-
-table {
+#mahasiswa {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
-    font-family: Georgia, serif;
-    font-size: 13px;
+    font-size: 12px;
 }
 
-/* KEPALA TABEL */
-th {
-    background-color: #49358c;
+#mahasiswa th {
+    background-color: #493b91;
     color: white;
-    padding: 12px 8px;
-    border: 1px solid #49358c;
+    padding: 10px 4px;
 }
 
-/* ISI TABEL */
-td {
-    background-color: #fff0d0;
-    border: 1px solid #c9b98c;
-    padding: 12px 8px;
+#mahasiswa td {
+    background-color: #fff0d2;
+    border: 1px solid #8ca77c;
+    padding: 10px 4px;
 }
 
-/* EFEK HOVER TABEL */
-tbody tr:hover td {
-    background-color: #ffe3a5;
+#mahasiswa tr:hover td {
+    background-color: #ffe2a8;
 }
 
-/* =========================
-   8. TAMPILAN RESPONSIVE HP
-========================= */
-@media (max-width: 600px) {
-    body {
-        margin: 15px;
-    }
 
-    .judul {
-        font-size: 22px;
-        margin-bottom: 35px;
-    }
-
-    h3 {
-        font-size: 23px;
-    }
-
-    /* Paket tersusun ke bawah */
-    .paket-container {
-        flex-direction: column;
-        gap: 20px;
+    .hosting {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 6px;
     }
 
     .paket {
-        width: 100%;
+        flex: 1 1 0;
+        min-width: 0;
     }
 
-    /* Tabel dapat digeser ke samping */
-    table {
-        min-width: 650px;
+    .paket h4 {
+        font-size: 11px;
+    }
+
+    .paket p,
+    .isi p {
+        font-size: 9px;
+        overflow-wrap: anywhere;
+    }
+
+    .isi {
+        padding: 5px;
+    }
+
+    .tombol {
+        font-size: 9px;
+        padding: 7px 1px;
+    }
+
+    #mahasiswa {
+        font-size: 9px;
+    }
+
+    #mahasiswa th,
+    #mahasiswa td {
+        padding: 6px 2px;
+        overflow-wrap: anywhere;
     }
 }
